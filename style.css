@@ -1,5 +1,9 @@
+/* NavBAr Start */
 
-                                        /* NavBAr Start */
+.logo{
+    display: none;
+}
+
 .navigation{
     width: 100%;
 }
@@ -10,14 +14,17 @@
 }
 
 .menu_container ul {
+    display: block;
     width:inherit;
     height: 70px;
     margin: 0px auto;
 }
 .menu_navigation{
+    display: block;
     width: 100%;
 }
 .menu_container ul li{
+    display: block;
 margin-top:auto ;
 margin-bottom: auto;
 margin-right: 10px;
@@ -38,6 +45,13 @@ color: white;
     margin: 0px 5px;
     width: 70px;
     text-align: center;
+}
+.badge{
+    background-color: rgba(0, 204, 255, 0.473);
+    color: black;
+    margin-left: 2px;
+    width: 40px;
+    height: 18px;
 }
 .log{
     color: white;
@@ -99,27 +113,40 @@ margin: 0px auto;
     border-top-left-radius: 8px ;
 }
 .search input{
-    margin-right: auto;
+
     height: 50px;
     outline: none;
     border: none;
+    border-right:1px solid white ;
     background-image: url(./images/search.png);
     background-repeat: no-repeat;
     background-position: 590px 12px;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
     
+    
+}
+
+.search-btn{
+    margin-right: auto;
+    border: transparent;
+    border-left:3px solid white ;
+    outline: none;
+    border-top-right-radius:8px ;
+    border-bottom-right-radius:8px ;
+    width: 60px;
+    font-size: 32px;
+    text-align: center;
+    background-color: white;
 }
 
 .sub-div{
     justify-content: center;
-    width: 500px;
+    width: inherit;
     margin: 0px auto;
 }
 .history{
     padding-left: 10px;
     padding-right: 10px;
-    margin: 10px 17px;
+    margin: 10px 7px;
     border-radius: 5px;
     background-color: rgb(0, 132, 255);
     color: white;
@@ -129,6 +156,7 @@ margin: 0px auto;
     width: 100%;
     height: 270px;
     margin-top: 50px;
+    padding-top: 10px;
     overflow-x: scroll;
     cursor: pointer;
     text-align: center;
@@ -141,7 +169,8 @@ margin: 0px auto;
 .circle-div{
     width: 160px;
     border-radius: 1000px;
-    border: 1px solid red ;
+    border: 3px solid  rgb(0, 132, 255) ;
+    outline: 4px solid rgb(95, 177, 255) ;
     height: 160px;
     margin: 0px 25px;
 }
@@ -200,22 +229,24 @@ margin: 0px auto;
     
 }
 .sub-banner{
-    width: 700px;
+    width: inherit;
     height: 80px;
     margin: auto auto;
+    font-size: 20px;
 }
 .sub-banner .first-child{
     margin-top: auto;
     margin-left: auto;
     margin-bottom: auto;
+    font-weight: 600;
     
 }
 .sub-banner .second-child{
     
     margin: auto 20px;
     margin-right: auto  ;
-    width: 140px;
-    height: 40px;
+    width: 150px;
+    height: 50px;
     padding-top: 7px;
     text-align: center;
     color: white;
@@ -266,6 +297,41 @@ top: 0px;
 z-index: -1;
 }
 
+.trending{
+    margin-top: 50px;
+}
+.trending .first-child,.second-child{
+    width: 100%;
+}
+.trending .second-child ul,li,li img{
+    display: none;
+}
+.trending .first-child h2,p{
+    text-align: center;
+    margin: 0px auto;
+}
+.trending .first-child h2 span{
+    color: blue;
+}
+.trending .second-child .first-image{
+    border-left: 6px solid white;
+    margin-top: 20px;
+    height: 400px;
+}
+.trending .second-child .first-image img{
+    width: inherit;
+    height: inherit;
+}
+.trending .second-child .grid-images{
+    border: 6px solid white;
+    height: 200px;
+    margin: 10px 0px;
+}
+.trending .second-child .grid-images img{
+    width: inherit;
+    height: inherit;
+}
+
 
 
 
@@ -299,7 +365,76 @@ z-index: -1;
         height: 240px;
     }
 }
-@media screen and (max-width:1083px) {
+@media screen and (max-width:1095px) {
+    .trending .second-child .row{
+        display: none;
+    }
+    .trending .second-child ul{
+        width: 100%;
+        display: block;
+        overflow-x: scroll;
+    }
+    .trending .second-child ul li{
+        display: block;
+        list-style-type: none;
+        width: 1110px;
+        height: 270px;
+        margin: 0px 10px;
+           
+    }
+    
+
+    .trending .second-child ul .a-2{
+        background-image: url(./images/man.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trending .second-child ul .a-3{
+        background-image: url(./images/3d-celebrate-winners-with-golden-cup-prize-winners-stars-holding-hand-award-ceremony-concept-pedestal-with-cartoon-style-3d-trophy-icon-vector-render-illustration-isolated-pink-background_412828-1243.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trending .second-child ul .a-4{
+        background-image: url(./images/women-illustrator.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trending .second-child ul .a-5{
+        background-image: url(./images/flower_1429-3451.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trending .second-child ul .a-6{
+        background-image: url(./images/leave.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trending .second-child ul .a-7{
+        background-image: url(./images/fruits.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trending .second-child ul .a-8{
+        background-image: url(./images/building.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trending .second-child ul .a-9{
+        background-image: url(./images/birds.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+    .trending .second-child ul .a-1{
+        background-image: url(./images/women.avif);
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    .trending .second-child ul li img{
+        display: block;
+        width: inherit;
+        height: inherit;
+    }
 
 
 }
@@ -312,7 +447,7 @@ z-index: -1;
             display: none;
         }
         .main-header{
-            margin-top: 130px;
+            margin-top: 70px;
         }
         .auth-div{
     
@@ -329,11 +464,79 @@ z-index: -1;
         .header{
             display: none;
         }
+        .logo{
+            display: block;
+            width: 200px;
+            margin: 0px auto;
+        }
+        .logo div{
+            color: white;
+            font-weight: bold;
+            text-align: center;
+            font-size: 40px;
+        }
+        .nav-div{
+            width: 100%;
+        }
         .m-div{
+            width: 100%;
             display: flex;
+        }
+        .banner{
+            margin-top: -10px;
         }
         
             
             
         
+}
+@media screen and (max-width:767px) {
+    .assit-search{
+        display: none;
+    }
+    .search-in{
+        width: 100% ;
+
+        border-radius: 4px;
+    }
+    .main-header{
+        margin-top: 50px;
+    }
+    .sub-div-2{
+        margin-top: 10px;
+    }
+
+}
+@media screen and (max-width:629px) {
+    .banner{
+        margin-top: 30px;
+    }
+
+}
+@media screen and (max-width:510px) {
+.banner{
+    margin-top: 0px;
+}
+}
+@media screen and (max-width:432px) {
+    .burger{
+        width: 20px;
+        height: 3px;
+        margin: 3px;
+    }
+    .history{
+        margin: 10px 3px;
+        padding: 0px 5px;
+    }
+    .banner{
+        margin-top: -30px;
+    }
+    .circle-div{
+        width: 60px;
+        height: 60px;
+        margin-top: 40px;
+    }
+    .blue-background{
+        height: 600px;
+    }
 }
